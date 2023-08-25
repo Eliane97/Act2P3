@@ -15,7 +15,7 @@ public class UserService {
     private UserRepository usuarioRepository;
 
     public String verificarExistenciaUsuario(User usuario) {
-        if (usuarioRepository.existsBynombreUsuario(usuario.getNombreUsuario())) {
+        if (usuarioRepository.existsByNombreUsuario(usuario.getNombreUsuario())) {
             return "Error: El usuario ya existe en la base de datos.";
         } else {
             usuarioRepository.save(usuario);

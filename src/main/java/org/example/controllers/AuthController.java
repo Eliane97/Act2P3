@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping ("/api") // Ruta base para todos los endpoints en este controlador
+@RequestMapping
 public class AuthController {
     @Autowired
     private UserService service;

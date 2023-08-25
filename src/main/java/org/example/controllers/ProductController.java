@@ -16,7 +16,7 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-    @PostMapping("/create")
+    @PostMapping("/createProduct")
     public ResponseEntity<String> crearProducto(@RequestBody Product product) {
 
         String respuesta = service.verificarPrecioYexistencia(product);
@@ -34,7 +34,7 @@ public class ProductController {
 
     }
 
-    @PutMapping("/update")
+    @PutMapping("/updateProduct")
     public ResponseEntity<String> actualizarProducto(@RequestBody Product product) {
 
         String respuesta = service.actualizarEntidad(product);
@@ -53,7 +53,7 @@ public class ProductController {
     }
 
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("/deleteProduct")
     public ResponseEntity<String> eliminarProducto(@RequestBody Product product) {
 
         String respuesta = service.eliminarProductoPorId(product);

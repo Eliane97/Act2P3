@@ -1,5 +1,6 @@
 package org.example.models;
-
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -33,6 +34,9 @@ public class Product {
 
     @Column(name = "fechaActualizacion")
     private LocalDateTime fechaActualizacion;
+
+    @OneToMany(mappedBy = "product")
+    private List<DetalleDeFactura> detallesDeFactura = new ArrayList<>();
 
 
 

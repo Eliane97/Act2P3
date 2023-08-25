@@ -12,17 +12,6 @@ public class Main {
     public static void main(String[] args) {
         // Para que corra la aplicaciom
         SpringApplication.run(Main.class, args);
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }

@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "usuarios")
+@Table(name = "usuario")
 public class User {
 
 
@@ -20,7 +20,7 @@ public class User {
     @Column (name="idUsuario")
     private Long idUsuario;
 
-    @Column(name ="nombreUsurio",nullable = false,length = 30)
+    @Column(name ="nombreUsuario",nullable = false,length = 30)
     private String nombreUsuario;
 
     @Column(name="contrasena", nullable = false,length = 120)
